@@ -1,0 +1,6 @@
+{
+  "name": "TSUE Dars Jadvali Telegram Bot",
+  "description": "Toshkent Davlat Iqtisodiyot Universiteti (TSUE) talabalari uchun dars jadvali, eslatmalar va guruh chatlari Telegram boti.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
