@@ -194,19 +194,12 @@ sudo usermod -aG docker ubuntu
 ```
 *(Log out and log back in for docker group changes to take effect).*
 
-### 3. Clone Repository & Setup Environment
+### 3. Start via Docker Compose (Ready out-of-the-box!)
+The repository is already pre-configured with your `.env` file (BOT_TOKEN and ADMIN_IDS):
 ```bash
-git clone <your-repository-url> /home/ubuntu/tsue-bot
-cd /home/ubuntu/tsue-bot
-
-cp .env.example .env
-nano .env
-```
-Provide your actual `BOT_TOKEN` from `@BotFather` and your numeric Telegram ID in `ADMIN_IDS`.
-
-### 4. Start via Docker Compose
-```bash
-docker compose up -d --build
+git clone https://github.com/karimjonov1/tsue-telegram-bot.git
+cd tsue-telegram-bot
+docker compose up -d
 ```
 
 The container starts with `restart: always`, ensuring it automatically reboots if the EC2 instance restarts or crashes.

@@ -5,8 +5,8 @@ coverage/
 .DS_Store
 *.log
 
-# Environment & Secrets (Crucial: never commit tokens)
-.env*
+# Environment
+!.env
 !.env.example
 
 # Python
